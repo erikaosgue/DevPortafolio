@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_marginTop="20dp"
+      android:layout_marginHorizontal="20dp"
+      android:id="@+id/cardView2"
+      app:cardElevation="3dp"
+      android:backgroundTint="@color/colorAccent"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_centerHorizontal="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <de.hdodenhof.circleimageview.CircleImageView
+
+          android:id="@+id/profile_image"
+          android:layout_width="96dp"
+          android:layout_height="96dp"
+          android:layout_alignParentEnd="true"
+          android:src="@drawable/erika_pic"
+          app:civ_border_color="#FF000000"/>
+
+      <TextView
+          android:id="@+id/userName"
+          android:layout_width="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/amarante"
+          android:text="@string/erika_osorio_guerrero"
+          android:textColor="@color/black"
+          android:textSize="26sp"
+          android:textStyle="bold"
+
+          />
+      <TextView
+          android:id="@+id/userProfession"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="italic"
+          android:textSize="23sp"
+          android:text="@string/android_developer"
+          android:layout_below="@+id/userName"
+          />
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:backgroundTint="@color/white"
+      android:layout_width="300dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="175dp"
+      app:cardElevation="7dp"
+      android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+      <TextView
+          android:id="@+id/getInTouch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/get_in_touch"
+          android:textColor="@color/black"
+          android:layout_centerHorizontal="true"
+          android:drawableBottom="@android:drawable/ic_menu_call"
+
+        />
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_below="@+id/cardView2"
+      android:layout_centerHorizontal="true">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tableLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</RelativeLayout>
