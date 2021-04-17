@@ -4,12 +4,7 @@
     <string name="erika_osorio_guerrero">Erika Osorio Guerrero</string>
     <string name="get_in_touch">Get in touch</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="about_Erika">"Hi my name is Erika, I am a Junior developer
-        currently learning Android development with Kotlin,
-        and very excited to build and create new apps, My hobbies are
-        playing soccer, listen to music and spend time with my family,
-        I love to improve and learn new things, not just professionally
-        but personally"
+    <string name="about_Erika">"Hi my name is Erika, I am a Junior developer currently learning Android development with Kotlin,nd very excited to build and create new apps, My hobbies are playing soccer, listen to music and spend time with my family,I love to improve and learn new things, not just professionally but personally"
     </string>
     <string name="skills">"* Python \n* nodeJs \n* Kotlin \n* Bash"</string>
     <string name="work">"* Chat App \n* Airbnb Clone \n* Pet Tracker"</string>

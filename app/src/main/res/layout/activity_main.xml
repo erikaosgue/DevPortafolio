@@ -13,7 +13,7 @@
       android:layout_marginHorizontal="20dp"
       android:id="@+id/cardView2"
       app:cardElevation="3dp"
-      android:backgroundTint="@color/colorAccent"
+      android:backgroundTint="#E8EAF6"
       android:layout_width="match_parent"
       android:layout_height="200dp"
       android:layout_centerHorizontal="true"
@@ -100,14 +100,15 @@
         android:id="@+id/tableLayoutId"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical" />
+        android:background="@drawable/my_gradient_drawable"
+        android:orientation="vertical"
+        />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_marginTop="45dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp" />
 
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
