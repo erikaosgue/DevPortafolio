@@ -16,13 +16,10 @@ class MainActivity : AppCompatActivity() {
 
 		// Set up our tabs
 		activityMainBinding.apply {
-			viewPager.adapter = DevPagerAdapter(supportFragmentManager)
-			tableLayoutId.setupWithViewPager(viewPager)
-			tableLayoutId.setTabTextColors(Color.GRAY, Color.parseColor("white"))
+			viewPagerId.adapter = DevPagerAdapter(supportFragmentManager)
+			tabLayoutId.setupWithViewPager(viewPagerId)
+			tabLayoutId.setTabTextColors(Color.GRAY, Color.parseColor("white"))
 		}
-
-
-
 
 	}
 }

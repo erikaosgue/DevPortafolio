@@ -11,7 +11,7 @@ import com.erikaosgue.devportafolio.view.WorkFragment
 var arrayList: ArrayList<Fragment> = arrayListOf(AboutFragment(), WorkFragment(), SkillsFragment(), ContactFragment())
 var arrayListTitle: ArrayList<String> = arrayListOf("ABOUT", "WORK", "SKILSS", "CONTACT")
 
-class DevPagerAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(fragmentManager) {
+class DevPagerAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(fragmentManager, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     override fun getCount(): Int {
         return arrayList.size
 

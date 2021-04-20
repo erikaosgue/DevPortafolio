@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--angle = 0, 45, 90, 135, 180-->
     <gradient
-        android:type="sweep"
-        android:angle="0"
-        android:endColor="#283593"
-        android:centerColor="#FF80AB"
-        android:startColor="#E91E63"
-        android:centerX="0.2%p"
-        android:centerY="15%p"/>
+      android:type="linear"
+      android:angle="90"
+      android:centerColor="#E91E63"
+      android:endColor="#283593"
+      android:startColor="#E91E63"/>
+
+
+<!--    <corners-->
+<!--      android:radius="60dp"/>-->
+
+<!--    <gradient-->
+<!--        android:type="sweep"-->
+<!--        android:angle="0"-->
+<!--        android:endColor="#283593"-->
+<!--        android:centerColor="#FF80AB"-->
+<!--        android:startColor="#E91E63"-->
+<!--        android:centerX="20%p"-->
+<!--        android:centerY="15%p"/>-->
+
+<!--    gradientRadius = 10%p, 50%p, 100%p, 150%p, 200%p-->
+<!--    <gradient-->
+<!--      android:type="radial"-->
+<!--      android:gradientRadius="100%p"-->
+<!--      android:startColor="#283593"-->
+<!--      android:endColor="#E91E63"-->
+<!--      />-->
 </shape>
